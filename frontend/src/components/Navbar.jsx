@@ -45,12 +45,10 @@ const Navbar = () => {
       <div className='flex items-center gap-4'>
 
     {location.pathname === '/' && (
-  <button
-    onClick={() => navigate('/admin')}
-    className='bg-primary text-white text-xs px-4 py-2 rounded-full hover:bg-gray-700 hidden md:block'
-  >
-    Admin Panel
-  </button>
+  <button onClick={() => window.location.href = '/admin'}>
+  Admin Panel
+</button>
+
 )}
 
 
