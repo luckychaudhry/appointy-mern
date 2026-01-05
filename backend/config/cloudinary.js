@@ -2,11 +2,12 @@ import { v2 as cloudinary } from 'cloudinary';
 
 const connectCloudinary = async () => {
 
-    cloudinary.config({
-        cloud_name: process.env.CLOUDINARY_NAME,
-        api_key: process.env.CLOUDINARY_API_KEY,
-        api_secret: process.env.CLOUDINARY_API_SECRET
-    });
+  cloudinary.config({
+  cloud_name: "dswngnvnl",
+  api_key: "529346893948471",
+  api_secret: "W3xO9U13xTBPfZJKR3kInp84_-I",
+});
+
 
 }
 console.log(
