@@ -45,9 +45,13 @@ const Navbar = () => {
       <div className='flex items-center gap-4'>
 
     {location.pathname === '/' && (
-  <button onClick={() => window.location.href = '/admin'}>
+  <button
+  onClick={() => window.location.href = 'https://appointy-health-v73y.vercel.app'}
+  className='bg-primary text-white text-xs px-4 py-2 rounded-full hover:bg-gray-700 hidden md:block'
+>
   Admin Panel
 </button>
+
 
 )}
 
