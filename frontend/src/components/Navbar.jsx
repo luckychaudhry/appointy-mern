@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
+const ADMIN_URL = import.meta.env.VITE_ADMIN_URL;
 
 const Navbar = () => {
   const navigate = useNavigate()
@@ -43,15 +44,15 @@ const Navbar = () => {
 
       <div className='flex items-center gap-4'>
 
-        {/* ✅ Admin Panel Button - show only on home page  */}
-        {location.pathname === '/' && (
-          <button
-            onClick={() => navigate('/admin')}
-            className='bg-primary text-white text-xs px-4 py-2 rounded-full hover:bg-gray-700 hidden md:block'
-          >
-            Admin Panel
-          </button>
-        )}
+    {location.pathname === '/' && (
+  <button
+    onClick={() => navigate('/admin')}
+    className='bg-primary text-white text-xs px-4 py-2 rounded-full hover:bg-gray-700 hidden md:block'
+  >
+    Admin Panel
+  </button>
+)}
+
 
         {token && userData ? (
           <div className='flex items-center gap-2 cursor-pointer group relative'>
