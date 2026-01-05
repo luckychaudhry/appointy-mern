@@ -19,7 +19,7 @@ const Navbar = () => {
   }
 
   const goToUserPanel = () => {
-  navigate('/')
+  window.location.href = 'https://appointy-health.vercel.app'
 }
 
 
