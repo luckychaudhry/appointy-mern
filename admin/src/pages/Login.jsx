@@ -29,7 +29,7 @@ const Login = () => {
      if (data.success) {
   setAToken(data.token)
   localStorage.setItem('aToken', data.token)
-  navigate('/admin-dashboard')   // 👈 YAHIN LAGANA HAI
+ navigate('/dashboard')    // 👈 YAHIN LAGANA HAI
 }else {
         toast.error(data.message)
       }
@@ -40,7 +40,7 @@ const Login = () => {
       if (data.success) {
   setDToken(data.token)
   localStorage.setItem('dToken', data.token)
-  navigate('/doctor-dashboard')  // 👈 YAHIN
+  navigate('/doctor-dashboard')   // 👈 YAHIN
 } else {
         toast.error(data.message)
       }
