@@ -9,5 +9,11 @@ const connectCloudinary = async () => {
     });
 
 }
+console.log(
+  "CLOUDINARY CHECK:",
+  process.env.CLOUDINARY_NAME,
+  process.env.CLOUDINARY_API_KEY ? "KEY_OK" : "KEY_MISSING",
+  process.env.CLOUDINARY_API_SECRET ? "SECRET_OK" : "SECRET_MISSING"
+);
 
 export default connectCloudinary;
